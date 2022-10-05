@@ -1,17 +1,19 @@
 #include <stdio.h>
+
+int factorial(int x)
+{
+    if (x == 1 || x == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return x * factorial(x - 1);
+    }
+}
+
 int main()
 {
-    int a,f;
-    printf("Enter a number");
-    f=1;
 
-    scanf("%d", &a);
-
-    for (int i = 1; i <= a; i++)
-    {
-        f*=i;
-        
-    }
-    printf("%d", f);
     return 0;
 }
